@@ -1,8 +1,3 @@
-
-def get_book_text(path):
-    with open(path) as f:
-        return f.read()
-    
 def get_word_count(text):
     words = text.split()
     return len(words)
@@ -18,6 +13,9 @@ def count_how_many_different_characters(text):
             letter_dict[i] = 1
     return letter_dict
     
+def get_book_text(path):
+    with open(path) as f:
+        return f.read()
 
 def main():
     book_path = "books/frankenstein.txt"
